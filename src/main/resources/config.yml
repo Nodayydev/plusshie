@@ -1,0 +1,191 @@
+# ============================================================
+# PLÜSSBOLT – ÁLTALÁNOS BEÁLLÍTÁSOK
+# ============================================================
+currency:
+  # A pénznem neve az árak mellett. A pénzt Vaulton keresztül vonja le.
+  suffix: "&2💲"
+
+# ============================================================
+# KATEGÓRIÁK ÉS FEJEK
+# ============================================================
+# A kategóriák neve és ikonja szabadon módosítható.
+# Az icon mezőbe bármilyen Minecraft tárgy/blokk neve írható (pl. DIAMOND_BLOCK).
+# Ha egyedi fej legyen az ikon, az icon-command mezőbe tegyél Give Code parancsot.
+# Ha az icon-command ki van töltve, az felülírja az icon mezőt.
+# A kategóriák alapikonja az icon mezőben van.
+# Minden kategóriánál ugyanaz az icon-command blokkos formátum szerepel.
+# Egyedi ikonhoz másold ki a Minecraft-Heads oldalon a Server Command > Give Code parancsot,
+# majd illeszd az adott kategória icon-command: >- sora alá, két szóközzel beljebb.
+# Példa:
+#   icon-command: >-
+#     /minecraft:give @p minecraft:player_head[...] 1
+# Blokk ikonhoz is használható; ilyenkor blokkhoz tartozó parancsot másolj.
+# A blokkos formában az aposztróf (pl. Rubik's Cube) nem okoz YAML-hibát.
+# Ne írj Rubik\\'s alakot: a backslash YAML-ban nem escape karakter.
+# Üres parancsnál az icon mezőben beállított alapikon jelenik meg.
+# Az icon-command kitöltésekor a parancsban szereplő tárgy/fej jelenik meg,
+# és felülírja az icon mezőben megadott alap ikont.
+# A "Minden" kategória automatikusan összegyűjti az összes többi kategória termékeit.
+#
+# Fej hozzáadásához a megfelelő kategória products része alá másolj egy bejegyzést:
+#   egyedi_azonosito:
+#     name: "A fej magyar neve"
+#     price: 10
+#     command: >-
+#       /minecraft:give @p minecraft:player_head[...] 1
+#
+# A command mezőbe a Minecraft-Heads oldalán válaszd a szerververziódat,
+# majd a Server Command > Give Code parancsot másold be.
+# Az @p helyére vásárláskor a vevő játékos neve kerül.
+# A parancsból próbálja a bolt a fej ikonjának textúráját is beállítani.
+# A parancsot ne tedd egyszeres idézőjelek közé; használd a fenti >- formát.
+# Minden kategóriában két minta termék szerepel. A command mezőket töltsd ki
+# a saját Give Code parancsaiddal; üres command esetén a vásárlás nem ad tárgyat.
+
+categories:
+  all:
+    name: "Minden"
+    icon: CHEST
+    icon-command: >-
+    # Ne adj meg itt termékeket; a lista automatikusan készül a többi kategóriából.
+    products: {}
+
+  animals:
+    name: "Állatok"
+    icon: BONE
+    icon-command: >-
+    products:
+      cat:
+        name: "Macska"
+        price: 10
+        command: ''
+      dog:
+        name: "Kutya"
+        price: 10
+        command: ''
+
+  blocks:
+    name: "Blokkok"
+    icon: BRICKS
+    icon-command: >-
+    products:
+      diamond_block:
+        name: "Gyémántblokk"
+        price: 15
+        command: ''
+      bookshelf:
+        name: "Könyvespolc"
+        price: 10
+        command: ''
+
+  decoration:
+    name: "Dekoráció"
+    icon: FLOWER_POT
+    icon-command: >-
+    products:
+      flower_vase:
+        name: "Virágváza"
+        price: 10
+        command: ''
+      lamp:
+        name: "Lámpa"
+        price: 12
+        command: ''
+
+  food_drinks:
+    name: "Ételek és italok"
+    icon: COOKED_BEEF
+    icon-command: >-
+    products:
+      pancakes:
+        name: "Palacsinta"
+        price: 9
+        command: ''
+      burger:
+        name: "Burger"
+        price: 10
+        command: ''
+
+  helmets:
+    name: "Sisakok"
+    icon: IRON_HELMET
+    icon-command: >-
+    products:
+      crown:
+        name: "Korona"
+        price: 15
+        command: ''
+      knight_helmet:
+        name: "Lovagi sisak"
+        price: 12
+        command: ''
+
+  humans:
+    name: "Emberek"
+    icon: PLAYER_HEAD
+    icon-command: >-
+    products:
+      villager:
+        name: "Falusi"
+        price: 10
+        command: ''
+      miner:
+        name: "Bányász"
+        price: 12
+        command: ''
+
+  humanoid:
+    name: "Humanoidok"
+    icon: ARMOR_STAND
+    icon-command: >-
+    products:
+      robot:
+        name: "Robot"
+        price: 15
+        command: ''
+      scarecrow:
+        name: "Madárijesztő"
+        price: 12
+        command: ''
+
+  miscellaneous:
+    name: "Egyéb"
+    icon: NETHER_STAR
+    icon-command: >-
+    products:
+      gift:
+        name: "Ajándék"
+        price: 8
+        command: ''
+      music_note:
+        name: "Hangjegy"
+        price: 8
+        command: ''
+
+  monsters:
+    name: "Szörnyek"
+    icon: ZOMBIE_HEAD
+    icon-command: >-
+    products:
+      zombie:
+        name: "Zombi"
+        price: 12
+        command: ''
+      creeper:
+        name: "Creeper"
+        price: 12
+        command: ''
+
+  plants:
+    name: "Növények"
+    icon: OAK_SAPLING
+    icon-command: >-
+    products:
+      sunflower:
+        name: "Napraforgó"
+        price: 8
+        command: ''
+      cactus:
+        name: "Kaktusz"
+        price: 8
+        command: ''

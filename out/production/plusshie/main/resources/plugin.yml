@@ -1,0 +1,11 @@
+name: PlussShop
+version: 1.0.0
+main: hu.plusshie.PlussShop
+api-version: '1.21'
+description: Plüss shop GUI
+softdepend: [Vault]
+commands:
+  pluss:
+    description: Megnyitja a plüss shopot
+    aliases: [plüss]
+    usage: /pluss

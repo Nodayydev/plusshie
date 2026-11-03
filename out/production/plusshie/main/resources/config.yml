@@ -1,0 +1,157 @@
+currency:
+  # A Vault-kompatibilis gazdasági plugin pénznemének megjelenítése.
+  suffix: " coin"
+
+# A Minecraft-Heads kategóriái. Fejet a products alá adhatsz.
+# A command mezőbe másold a fej oldalán: Server Command > Give Code.
+# YAML miatt a teljes parancsot egyszeres idézőjelek közé tedd.
+# Az @p célpontot a plugin vásárláskor a játékosra cseréli.
+# A commandból készül a shopban látható fej ikonja és a kiosztott fej is.
+
+categories:
+  alphabet:
+    name: "Alphabet"
+    icon: BOOK
+    products: {}
+
+  animals:
+    name: "Animals"
+    icon: BONE
+    products: {}
+
+  blocks:
+    name: "Blocks"
+    icon: BRICKS
+    products: {}
+
+  decoration:
+    name: "Decoration"
+    icon: FLOWER_POT
+    products: {}
+
+  food_drinks:
+    name: "Food & Drinks"
+    icon: COOKED_BEEF
+    products:
+      pancakes:
+        name: "Pancakes"
+        price: 9
+        command: ''
+      candy_cane:
+        name: "Candy Cane"
+        price: 5
+        command: ''
+      burger:
+        name: "Burger"
+        price: 10
+        command: ''
+      french_fries:
+        name: "French Fries"
+        price: 12
+        command: ''
+      popcorn:
+        name: "Popcorn"
+        price: 8
+        command: ''
+      muffin:
+        name: "Muffin"
+        price: 9
+        command: ''
+      tofu:
+        name: "Tofu"
+        price: 7
+        command: ''
+      sandwich:
+        name: "Sandwich"
+        price: 7
+        command: ''
+      sundae:
+        name: "Sundae"
+        price: 8
+        command: ''
+      baked_beans:
+        name: "Baked Beans"
+        price: 8
+        command: ''
+      lava_potion:
+        name: "Lava Potion"
+        price: 12
+        command: ''
+      cake:
+        name: "Cake"
+        price: 15
+        command: ''
+      bread:
+        name: "Bread"
+        price: 6
+        command: ''
+      white_chocolate:
+        name: "White Chocolate"
+        price: 6
+        command: ''
+      candy_box:
+        name: "Candy Box"
+        price: 8
+        command: ''
+      magikarp:
+        name: "Magikarp on a Plate"
+        price: 11
+        command: ''
+      fried_chicken:
+        name: "Fried Chicken"
+        price: 10
+        command: ''
+      cola:
+        name: "Cola"
+        price: 7
+        command: ''
+      cookie:
+        name: "Cookie"
+        price: 5
+        command: ''
+      sushi:
+        name: "Sushi"
+        price: 11
+        command: ''
+      dark_chocolate:
+        name: "Dark Chocolate"
+        price: 6
+        command: ''
+      taco:
+        name: "Taco"
+        price: 10
+        command: ''
+      boba_tea:
+        name: "Boba Tea"
+        price: 9
+        command: ''
+
+  helmets:
+    name: "Helmets"
+    icon: IRON_HELMET
+    products: {}
+
+  humans:
+    name: "Humans"
+    icon: PLAYER_HEAD
+    products: {}
+
+  humanoid:
+    name: "Humanoid"
+    icon: ARMOR_STAND
+    products: {}
+
+  miscellaneous:
+    name: "Miscellaneous"
+    icon: NETHER_STAR
+    products: {}
+
+  monsters:
+    name: "Monsters"
+    icon: ZOMBIE_HEAD
+    products: {}
+
+  plants:
+    name: "Plants"
+    icon: OAK_SAPLING
+    products: {}

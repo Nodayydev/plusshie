@@ -1,0 +1,11 @@
+name: PlussShop
+version: 1.0.0
+main: hu.plusshie.PlussShop
+api-version: '1.21'
+description: Magyar nyelvű plüssbolt menü
+softdepend: [Vault]
+commands:
+  pluss:
+    description: Megnyitja a plüssboltot
+    aliases: [plüss]
+    usage: /pluss
